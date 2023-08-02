@@ -6,8 +6,8 @@ function App() {
     <>
       <Profile 
       avatar={avatarImg}
-      name="Tiago Maselli"
-      bio="Desenvolvedor web"
+      name="Clark Kent"
+      bio="Superman e repórter do planeta diário"
       email="email@email.com"
       phone="99 99999-9999"
       githubUrl="https://github.com/"

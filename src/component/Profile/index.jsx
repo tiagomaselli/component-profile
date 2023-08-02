@@ -1,4 +1,4 @@
-import Button from "../Button";
+import Link from "../Link";
 
 export default function Profile ({avatar, name, bio, email, phone, githubUrl, linkedinUrl, twitterUrl}) {
   return (
@@ -8,9 +8,9 @@ export default function Profile ({avatar, name, bio, email, phone, githubUrl, li
       <p>{bio}</p>
       <p>{email}</p>
       <p>{phone}</p>
-      <Button url={githubUrl} text="Github"/>
-      <Button url={linkedinUrl} text="LinkedIn"/>
-      <Button url={twitterUrl} text="Twitter"/>
+      <Link url={githubUrl} text="Github"/>
+      <Link url={linkedinUrl} text="LinkedIn"/>
+      <Link url={twitterUrl} text="Twitter"/>
     </>
   )
 }
