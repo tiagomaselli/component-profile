@@ -8,7 +8,7 @@ function App() {
       avatar={avatarImg}
       name="Clark Kent"
       bio="Superman e repórter do planeta diário"
-      email="email@email.com"
+      email="clark.super@email.com"
       phone="99 99999-9999"
       githubUrl="https://github.com/"
       linkedinUrl="https://linkedin.com/"

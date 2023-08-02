@@ -1,17 +1,20 @@
 import Link from "../Link";
+import styles from "./style.module.css";
 
 export default function Profile ({avatar, name, bio, email, phone, githubUrl, linkedinUrl, twitterUrl}) {
   return (
-    <>
-      <img src={avatar} alt={name} />
-      <p>{name}</p>
-      <p>{bio}</p>
-      <p>{email}</p>
-      <p>{phone}</p>
-      <Link url={githubUrl} text="Github"/>
-      <Link url={linkedinUrl} text="LinkedIn"/>
-      <Link url={twitterUrl} text="Twitter"/>
-    </>
+    <div className={styles.container}>
+      <img src={avatar} alt={name} className={styles.avatar}/>
+      <h2 className={styles.name}>{name}</h2>
+      <div>{bio}</div>
+      <div>{email}</div>
+      <div>{phone}</div>
+      <div className={styles.links}>
+        <Link url={githubUrl} text="Github"/>
+        <Link url={linkedinUrl} text="LinkedIn"/>
+        <Link url={twitterUrl} text="Twitter"/>
+      </div>
+    </div>
   )
 }
 
